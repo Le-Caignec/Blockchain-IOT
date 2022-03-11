@@ -1,0 +1,160 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "Nom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Prenom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "mailAdresse",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "answere",
+								"type": "bool"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct Consentement.UserInfo",
+						"name": "person",
+						"type": "tuple"
+					}
+				],
+				"name": "Return",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "prenom",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mailAdresse",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "answere",
+						"type": "bool"
+					}
+				],
+				"name": "SetUserInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getUserInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "Nom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Prenom",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "mailAdresse",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "answere",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Consentement.UserInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Consentement.sol": "Consentement"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Consentement.sol": {
+			"keccak256": "0x82fdf31e3df9db84371d20cd80084cf6a063d67e7fdbb0121be3693a87ea44f2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a6f6ff2aa6604d1d27977d7ba66314842705c38164ba249b607b0c31f037e19",
+				"dweb:/ipfs/QmYTfincbm3zEsHmMPC77FYGfMGaURLZEcFnvxfEgxPWZo"
+			]
+		}
+	},
+	"version": 1
+}
